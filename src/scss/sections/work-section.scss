@@ -1,0 +1,66 @@
+.work-section {
+  text-align: center;
+
+  color: $work-section-color;
+
+  .title {
+    font-size: 30px;
+    font-weight: 900;
+
+    text-transform: capitalize;
+    letter-spacing: .75px;
+
+    margin-bottom: 0;
+  }
+
+  .info {
+    font-size: 20px;
+    font-weight: 300;
+
+    margin-top: 10px;
+  }
+
+  .filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 60px;
+
+    text-transform: uppercase;
+
+    font-weight: 900;
+
+    color: $work-filter-color;
+
+    .filter {
+      margin: 4px 5px;
+      padding: 10px 20px;
+
+      border-radius: 5px;
+
+      border: 0;
+      outline: 0;
+
+      background-color: $white-red-color;
+
+      &:hover {
+        background-color: $grey-color;
+        transition: .3s;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .works {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 4fr));
+    grid-gap: 3px;
+
+    margin-top: 20px;
+    margin-bottom: 75px;
+    padding: 0 130px;
+  }
+}

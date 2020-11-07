@@ -1,9 +1,11 @@
+@import "~normalize.css/normalize.css";
 @import "variables";
 @import "fonts";
 @import "container";
 @import "sections/header";
 @import "sections/welcome-section";
 @import "sections/feature-section";
+@import "sections/work-section";
 
 body {
   margin: 0;
