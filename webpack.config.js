@@ -11,5 +11,10 @@ module.exports = {
             title: 'Web Paint',
             template: 'public/index.html'
         })
-    ]
+    ],
+
+    devServer: {
+        open: true,
+        historyApiFallback: true
+    }
 };
