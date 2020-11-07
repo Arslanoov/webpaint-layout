@@ -43,11 +43,12 @@
       border: 0;
       outline: 0;
 
+      transition: .3s;
+
       background-color: $white-red-color;
 
       &:hover {
         background-color: $grey-color;
-        transition: .3s;
         cursor: pointer;
       }
     }
@@ -62,5 +63,11 @@
     margin-top: 20px;
     margin-bottom: 75px;
     padding: 0 130px;
+
+    .work {
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
