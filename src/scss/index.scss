@@ -1,5 +1,13 @@
+@import "variables";
+@import "fonts";
+@import "container";
+@import "header";
+
 body {
-  .text {
-    color: green;
-  }
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
