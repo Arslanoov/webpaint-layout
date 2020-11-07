@@ -1,2 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300&display=swap');
 @import url('https://fonts.cdnfonts.com/css/reklame-script');
+
+html {
+  font-size: 14px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 11px;
+  }
+}
