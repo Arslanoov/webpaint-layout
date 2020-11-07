@@ -1,135 +1,97 @@
-Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve '/home/rasul/files/work/projects/layouts/webpaint/src/html/views/index.html' in '/home/rasul/files/work/projects/layouts/webpaint':
-  Error: Can't resolve '/home/rasul/files/work/projects/layouts/webpaint/src/html/views/index.html' in '/home/rasul/files/work/projects/layouts/webpaint'
-  ModuleNotFoundError: Module not found: Error: Can't resolve '/home/rasul/files/work/projects/layouts/webpaint/src/html/views/index.html' in '/home/rasul/files/work/projects/lay  outs/webpaint'
-  
-  - Compilation.js:1478 
-    [webpaint]/[webpack]/lib/Compilation.js:1478:28
-  
-  - NormalModuleFactory.js:648 
-    [webpaint]/[webpack]/lib/NormalModuleFactory.js:648:13
-  
-  
-  - NormalModuleFactory.js:233 
-    [webpaint]/[webpack]/lib/NormalModuleFactory.js:233:22
-  
-  
-  - NormalModuleFactory.js:357 
-    [webpaint]/[webpack]/lib/NormalModuleFactory.js:357:22
-  
-  - NormalModuleFactory.js:120 
-    [webpaint]/[webpack]/lib/NormalModuleFactory.js:120:11
-  
-  - NormalModuleFactory.js:577 
-    [webpaint]/[webpack]/lib/NormalModuleFactory.js:577:24
-  
-  - NormalModuleFactory.js:721 
-    [webpaint]/[webpack]/lib/NormalModuleFactory.js:721:5
-  
-  - Resolver.js:296 finishWithoutResolve
-    [webpaint]/[enhanced-resolve]/lib/Resolver.js:296:11
-  
-  - Resolver.js:362 
-    [webpaint]/[enhanced-resolve]/lib/Resolver.js:362:15
-  
-  - Resolver.js:410 
-    [webpaint]/[enhanced-resolve]/lib/Resolver.js:410:5
-  
-  
-  - Resolver.js:410 
-    [webpaint]/[enhanced-resolve]/lib/Resolver.js:410:5
-  
-  
-  - Resolver.js:410 
-    [webpaint]/[enhanced-resolve]/lib/Resolver.js:410:5
-  
-  
-  - Resolver.js:410 
-    [webpaint]/[enhanced-resolve]/lib/Resolver.js:410:5
-  
-  
-  - Resolver.js:410 
-    [webpaint]/[enhanced-resolve]/lib/Resolver.js:410:5
-  
-  
-  - Resolver.js:410 
-    [webpaint]/[enhanced-resolve]/lib/Resolver.js:410:5
-  
-  
-  - Resolver.js:410 
-    [webpaint]/[enhanced-resolve]/lib/Resolver.js:410:5
-  
-  
-  - DirectoryExistsPlugin.js:41 
-    [webpaint]/[enhanced-resolve]/lib/DirectoryExistsPlugin.js:41:15
-  
-  - task_queues.js:79 processTicksAndRejections
-    internal/process/task_queues.js:79:21
-  
-  - child-compiler.js:131 
-    [webpaint]/[html-webpack-plugin]/lib/child-compiler.js:131:18
-  
-  - Compiler.js:510 
-    [webpaint]/[webpack]/lib/Compiler.js:510:11
-  
-  - Compiler.js:1014 
-    [webpaint]/[webpack]/lib/Compiler.js:1014:17
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [webpaint]/[tapable]/lib/Hook.js:18:14
-  
-  - Compiler.js:1010 
-    [webpaint]/[webpack]/lib/Compiler.js:1010:33
-  
-  - Compilation.js:2029 
-    [webpaint]/[webpack]/lib/Compilation.js:2029:10
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [webpaint]/[tapable]/lib/Hook.js:18:14
-  
-  - Compilation.js:2022 
-    [webpaint]/[webpack]/lib/Compilation.js:2022:37
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [webpaint]/[tapable]/lib/Hook.js:18:14
-  
-  - Compilation.js:1996 cont
-    [webpaint]/[webpack]/lib/Compilation.js:1996:33
-  
-  - Compilation.js:2042 
-    [webpaint]/[webpack]/lib/Compilation.js:2042:9
-  
-  - async.js:2830 
-    [webpaint]/[neo-async]/async.js:2830:7
-  
-  - async.js:2850 Object.each
-    [webpaint]/[neo-async]/async.js:2850:39
-  
-  - Compilation.js:3107 Compilation.createChunkAssets
-    [webpaint]/[webpack]/lib/Compilation.js:3107:12
-  
-  - Compilation.js:2037 
-    [webpaint]/[webpack]/lib/Compilation.js:2037:13
-  
-  - Compilation.js:2191 
-    [webpaint]/[webpack]/lib/Compilation.js:2191:5
-  
-  - async.js:3461 Object.eachLimit
-    [webpaint]/[neo-async]/async.js:3461:14
-  
-  - Compilation.js:2128 Compilation.codeGeneration
-    [webpaint]/[webpack]/lib/Compilation.js:2128:12
-  
-  - Compilation.js:1962 
-    [webpaint]/[webpack]/lib/Compilation.js:1962:11
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [webpaint]/[tapable]/lib/Hook.js:18:14
-  
-</pre><script src="main.js"></script>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Web Paint</title>
+  <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-logo"><img src="/img/logo.svg" alt="logo"> <span class="header-logo-text">ebpaint</span></div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="#" class="nav-list__item-link">Home</a></li>
+        <li class="nav-list__item"><a href="#" class="nav-list__item-link">Portfolio</a></li>
+        <li class="nav-list__item"><a href="#" class="nav-list__item-link">About</a></li>
+        <li class="nav-list__item"><a href="#" class="nav-list__item-link">Blog</a></li>
+        <li class="nav-list__item"><a href="#" class="nav-list__item-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="welcome-section">
+      <h1 class="title">We are <span class="title-main">Webpaint</span></h1>
+      <h2 class="subtitle"><span class="subtitle-italic">digital & branding</span> agency based in Jupiter and we would love to turn ideas into beautiful things.</h2><button class="button">See portfolio</button>
+    </section>
+    <section class="feature-section">
+      <div class="features">
+        <div class="feature"><img class="logo" src="/img/feature/android.svg" alt="">
+          <h4 class="title">Consectetur</h4>
+          <div class="description">Vestibulum id ligula porta euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</div>
+        </div>
+        <div class="feature"><img class="logo" src="/img/feature/mac.svg" alt="">
+          <h4 class="title">Consectetur</h4>
+          <div class="description">Vestibulum id ligula porta euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</div>
+        </div>
+        <div class="feature"><img class="logo" src="/img/feature/camera.svg" alt="">
+          <h4 class="title">Consectetur</h4>
+          <div class="description">Vestibulum id ligula porta euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</div>
+        </div>
+        <div class="feature"><img class="logo" src="/img/feature/timer.svg" alt="">
+          <h4 class="title">Consectetur</h4>
+          <div class="description">Vestibulum id ligula porta euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</div>
+        </div>
+      </div>
+    </section>
+    <section class="work-section">
+      <h3 class="title">Our featured works</h3>
+      <p class="info">Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum.</p>
+      <div class="filters">
+        <div class="filter active">All</div>
+        <div class="filter">Graphic</div>
+        <div class="filter">Illustration</div>
+        <div class="filter">Motion</div>
+      </div>
+      <div class="works">
+        <div class="work"><img src="/img/work/1.jpg" alt=""></div>
+        <div class="work"><img src="/img/work/2.jpg" alt=""></div>
+        <div class="work"><img src="/img/work/3.jpg" alt=""></div>
+        <div class="work"><img src="/img/work/4.jpg" alt=""></div>
+        <div class="work"><img src="/img/work/5.jpg" alt=""></div>
+        <div class="work"><img src="/img/work/6.jpg" alt=""></div>
+        <div class="work"><img src="/img/work/7.jpg" alt=""></div>
+        <div class="work"><img src="/img/work/8.jpg" alt=""></div>
+        <div class="work"><img src="/img/work/9.jpg" alt=""></div>
+        <div class="work"><img src="/img/work/10.jpg" alt=""></div>
+        <div class="work"><img src="/img/work/11.jpg" alt=""></div>
+        <div class="work"><img src="/img/work/12.jpg" alt=""></div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <h3 class="title">Get in touch</h3>
+      <p class="info">Vestibulum id ligula porta felis euismod semper,malesuada euismod.</p>
+      <div class="contact-info">
+        <div class="street"><img src="/img/contact/geo.svg" alt=""> Moonshine Street No: 14/05 Light City, Jupiter</div>
+        <div class="phone"><img src="/img/contact/tel.svg" alt=""> 0247 541 65 87</div>
+      </div>
+      <div class="socials"><img class="social" src="/img/contact/socials/rss.svg" alt=""> <img class="social" src="/img/contact/socials/facebook.svg" alt=""> <img class="social" src="/img/contact/socials/twitter.svg" alt=""> <img class="social" src="/img/contact/socials/dribble.svg" alt=""> <img class="social" src="/img/contact/socials/pinterest.svg" alt=""></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="copyright">@ 2020 Webpaint. All Rights Reserved.</div>
+  </footer>
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>
