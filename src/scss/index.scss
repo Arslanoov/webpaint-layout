@@ -1,0 +1,19 @@
+@import "~normalize.css/normalize.css";
+@import "variables";
+@import "fonts";
+@import "container";
+@import "sections/header";
+@import "sections/welcome-section";
+@import "sections/feature-section";
+@import "sections/work-section";
+@import "sections/contact-section";
+@import "sections/footer";
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
